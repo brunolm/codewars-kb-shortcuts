@@ -1,10 +1,5 @@
 "use strict";
 
-let testBtn = <HTMLButtonElement>document.querySelector("#validate_btn");
-let submitBtn = <HTMLButtonElement>document.querySelector("#attempt_btn");
-
-let tabs = document.querySelector("#play dl.tabs");
-
 document.addEventListener("keydown", function(e) {
   let id = (<any>e).keyIdentifier;
   let stop = () => {
@@ -12,9 +7,13 @@ document.addEventListener("keydown", function(e) {
     e.stopImmediatePropagation();
   };
 
+  let testBtn = <HTMLButtonElement>document.querySelector("#validate_btn");
+  let submitBtn = <HTMLButtonElement>document.querySelector("#attempt_btn");
+
+  let tabs = document.querySelector("#play dl.tabs");
+
   if (id === "F5") { // test
     testBtn.click();
-    console.log("F5 OK");
     stop();
   }
   else if (id === "F6") { // submit
@@ -34,7 +33,7 @@ document.addEventListener("keydown", function(e) {
 let src = `var mainProfileHeader = document.querySelector("#main_header .profile-item");
 if (mainProfileHeader) {
   var score = window.intercomSettings.javascript_rank_score;
-  mainProfileHeader.setAttribute("title", score);
+  mainProfileHeader.setAttribute("title", "JS exp: " + score);
 }`;
 
 let s = document.createElement("script");
