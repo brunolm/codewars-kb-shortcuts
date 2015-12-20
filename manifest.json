@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Keyboard Shortcuts for CodeWars",
+  "description": "Keyboard Shortcuts for CodeWars.",
+  "version": "1.0",
+  "permissions": [ "http://www.codewars.com/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "http://www.codewars.com/*" ],
+      "js": [ "built/index.js" ]
+    }
+  ]
+}

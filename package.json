@@ -1,0 +1,14 @@
+{
+  "name": "codewarskbs",
+  "version": "1.0.0",
+  "description": "Keyboard Shortcuts for Code Wars",
+  "main": "built/index.js",
+  "scripts": {
+    "test": "echo 'no'"
+  },
+  "keywords": [
+    "codewars"
+  ],
+  "author": "BrunoLM <brunolm7@gmail.com> (http://codingwise.com/)",
+  "license": "MIT"
+}
