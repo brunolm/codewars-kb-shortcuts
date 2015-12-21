@@ -33,6 +33,7 @@ document.addEventListener("keydown", function(e) {
 let src = `var mainProfileHeader = document.querySelector("#main_header .profile-item");
 if (mainProfileHeader) {
   var score = window.intercomSettings.javascript_rank_score;
+  console.log('js: ' + score);
   mainProfileHeader.setAttribute("title", "JS exp: " + score);
 }`;
 
